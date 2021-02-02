@@ -16,8 +16,8 @@ def foo(arr: List[int], s: int) -> int:
             left -= 1
         else:
             right += 1
-    le 
-    return arr[left:right]
+    le = right-left
+    return le, arr[left:right]
 
 
 def bar(arr: List[int], s: int) -> int:
@@ -27,4 +27,4 @@ def bar(arr: List[int], s: int) -> int:
 l, su = map(int, input('len, sum:').split())
 
 arr = [int(input()) for _ in range(l)]
-print(';')
+print(foo(arr,su))
